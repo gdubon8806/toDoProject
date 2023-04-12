@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myToDoList</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="headerContainer">
+
+            <div id="titleHeaderContainer">
+                <h1>TaskyNotes</h1>
+                <div id="menuBtn" title="menuButton"><span class="icon-menu"></span></div>
+            </div>
+
+            <div id="menuContainer">
+                <div id="btnsContainer">
+                    <a href="indexToDoList.html">
+                        <div title="Home"><span class="icon-home"></span></div>
+                    </a>
+                    <a href="checkedTasks.html">
+                        <div title="Checked Tasks"><span class="icon-check-1"></span></div>
+                    </a>
+                    <a href="'ControlCenter.html">
+                        <div title="Control Center"><span class="icon-history"></span></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <div id="mainContainer">
+            <div id="submitDataContainer">
+                <button id="addNewTaskBtn" title="addButton">ADD TASK</button>
+            </div>
+            <div id="AreaTasks">
+                <div id="draftContainer" hidden>
+                    <div id="inputAreaTaskContainer" contenteditable="true">
+                    </div>
+                    <div id="submitBTNContainer">
+                        <button id="submitBtnInDraftContainer">Add Task</button>
+                        <button id="cancelSubmitBtnInDraftContainer">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script  defer src="js/indexBehavior.js"></script>
+    
+
+</body>
+
+</html>

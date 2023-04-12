@@ -1,0 +1,159 @@
+body{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+/*HeaderContainer rules*/
+
+#titleHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+
+
+
+#titleHeaderContainer h1{
+    text-align: center;
+    width: 90%;
+    font-size: 3.5em;
+    font-family:'Dancing Script', cursive;
+}
+
+#menuContainer{
+    background-color: rgba(0, 0, 0, 0.856);
+    visibility: hidden;
+}
+
+#btnsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+}
+
+
+.test1 {
+    animation: .5s despliegue;
+    height: 40px;
+    opacity: 1;
+  }
+
+  .test2 {
+    animation: .5s despliegueAlreves;
+    height: 0;
+    opacity: 0;
+  }
+
+@keyframes despliegue {
+    from{
+      opacity: 0;
+      height: 0px;
+    }
+    to{
+      opacity: 1;
+      height: 40px;
+    }
+  }
+  @keyframes despliegueAlreves {
+    from{
+      opacity: 1;
+      height: 40px;
+    }
+    tos{
+      opacity: 0;
+      height: 0px;
+    }
+  }
+
+
+
+#menuContainer a:link{
+    color: white;
+}
+
+#menuContainer a:visited{
+    color: white;
+}
+
+
+/*details and add newtask data container*/
+#submitDataContainer{
+    
+    position: relative;
+    margin: 1em;
+    text-align: center;
+}
+
+#addNewTaskBtn{
+    border-width: 2px;  
+    border-radius: .5em;
+}
+
+/*Draft rules */
+#draftContainer{
+    border:  rgb(56, 56, 56) thin solid;
+    background-color: azure;
+    padding: 1em;
+    border-radius: 1em;
+    border-width: 2px;
+    text-align: center;
+}
+#inputAreaTaskContainer{
+    margin: 1em;
+    padding: 1em;
+    vertical-align: middle;  
+}
+#draftContainer button{
+    background-color: white;
+    border-radius: .5em;
+}
+
+/*refactor since here next time*/
+
+
+#AreaTasks{
+    margin: 1em;
+    padding: 5px;
+}
+
+.taskContainer{
+    border:  rgb(56, 56, 56) thin solid;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    border-width: 2px;
+}
+
+.taskContainer:hover .DeleteButton, .taskContainer:hover .ModifyButton, .taskContainer:hover .CheckedButton{
+    opacity: 1;
+}
+
+.DeleteButton:hover, .ModifyButton:hover, .CheckedButton:hover{
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+}
+
+.taskContent{
+    position: relative;
+    margin: 2px;
+    padding: 1px;
+    font-size: 100%;
+}
+
+.ModifyButton, .DeleteButton, .CheckedButton{
+    border: none;
+    background-color: white;
+    margin-right: 25px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out ;
+
+}
+
+
